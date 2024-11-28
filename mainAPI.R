@@ -1,0 +1,5 @@
+if (!require(plumber)) install.packages("plumber")
+library(plumber)
+file.exists("C:\\Users\\Nam\\OneDrive\\Documents\\R_API_EXAM\\R_API.R")
+pr <- plumb("C:\\Users\\Nam\\OneDrive\\Documents\\R_API_EXAM\\R_API.R")
+pr$run(port = 8000)
